@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Avi Patel</title>
+
+    <!-- <link rel="icon" 
+      type="image/png" 
+      href="images/icon/favicon-16x16.png"> -->
+
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700&display=swap" rel="stylesheet">
+    <link href="//db.onlinewebfonts.com/c/5237a1e3a872fc2e31712575aa39235b?family=Visby+Round+CF+Heavy" rel="stylesheet"
+        type="text/css" />
+    <link href="https://fonts.googleapis.com/css?family=Varela+Round&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/25bd7b8465.js" crossorigin="anonymous"></script>
+
+    <!-- Boostrap Start -->
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script> -->
+    <!-- Bootstrap End -->
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+    <!-- Personal CSS + JS -->
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <script src="app.js"></script>
+
+</head>
+
+<div class="container">
+
+    <a id="pageUpBtn" href="#heroTrigger"><i class="fas fa-chevron-up"></i></a>
+
+    <section class="heroSection" id="heroTrigger">
+
+        <nav class="mainNav">
+
+            <a href="#heroTrigger" class="navBrand" id="mainItem"><img src="images/personal-logo.png" alt=""></a>
+
+            <div class="navContainer">
+
+                <ul class="navList">
+                    <a href="#workTrigger" class="navItem">Work</a>
+                    <a href="about.html" class="navItem">About</a>
+                    <a href="#contactTrigger" class="navItem">Contact</a>
+                </ul>
+
+                <div class="bars navItem-collapse">
+                    <span class="bar" id="bar1"></span>
+                    <span class="bar" id="bar2"></span>
+                    <span class="bar" id="bar3"></span>
+                </div>
+
+            </div>
+
+        </nav>
+
+        <div class="heroPara">
+
+            <h2 class="heroIntro">Hey! </h2>
+            <h2 class="heroIntro">I'm <span class="accent">Avi</span>.</h2>
+            <h2 id="heroProfession"><span class="accent">Web Developer</span> based in Toronto, ON.</h2>
+            <p id="heroCoop">Seeking Summer 2020 Coop Opportunities</p>
+            <a href="documents/Proper Resume.pdf" target="_blank" id="resumeBtn">Resume</a>
+        </div>
+
+        <div class="mainIllus">
+            <img src="images/illustration1.png" alt="">
+        </div>
+
+        <a href="#workTrigger" id="workTrig">
+            <div class="exploreMore">
+
+                <p id="downHeading">Find out more!</p>
+                <i class="fas fa-chevron-down" id="down"></i>
+
+            </div>
+        </a>
+
+    </section>
+
+    <section class="expandNav-closed">
+
+        <div class="profilePic" id="profPic">
+            <div class="circle"></div>
+        </div>
+
+        <ul class="navList">
+            <a href="#workTrigger" class="navItem" id="expandWork">Work</a>
+            <a href="about.html" class="navItem" id="expandAbout">About</a>
+            <a href="#contactTrigger" class="navItem" id="expandContact">Contact</a>
+        </ul>
+
+        <ul class="socialLinks">
+            <a href="https://www.facebook.com/aviipatelll" target="_blank" id="fbLink"><i
+                    class="fab fa-facebook-square"></i></a>
+            <a href="https://www.linkedin.com/in/aviipatell/" target="_blank" id="linkedLink"><i
+                    class="fab fa-linkedin"></i></a>
+            <a href="https://github.com/Aviipatell" target="_blank" id="gitLink"><i
+                    class="fab fa-github-square"></i></a>
+            <a href="mailto:avi.patel0025@gmail.com" target="_blank" id="mailLink"><i
+                    class="fas fa-envelope-square"></i></a>
+            <a href="https://twitter.com/aviipatell" target="_blank" id="tweetLink"><i
+                    class="fab fa-twitter-square"></i></a>
+        </ul>
+
+    </section>
+
+    <section class="work" id="workTrigger">
+
+        <div class="secondaryIllus">
+            <img src="images/illustration3.png" alt="">
+        </div>
+
+        <div class="card" id="card1">
+
+            <div class="cardImage"></div>
+
+            <div class="cardContent">
+
+                <h3>WBR Website</h3>
+
+                <p>Utilized <span class="accent">HTML</span>, <span class="accent">CSS</span>, and <span
+                        class="accent">JavaScript</span> to create and deploy a responsive static website for the WBR
+                    Committee as a platform for business
+                    strategy and entrepreneurial articles.</p>
+
+            </div>
+
+            <div class="cardButtons">
+
+                <a href="">View on Github</a>
+
+                <a href="https://waterloobusinessreview.com">Visit Site</a>
+
+            </div>
+
+        </div>
+
+        <div class="card" id="card2">
+
+            <div class="cardImage"></div>
+
+            <div class="cardContent">
+
+                <h3>Patatap Clone</h3>
+
+                <p>Integrated <span class="accent">Paper.js</span> and <span class="accent">Howler.js</span> libraries
+                    and used HTML canvas’ with <span class="accent">PaperScript</span> to create a fun
+                    Web Application.</p>
+
+            </div>
+
+            <div class="cardButtons">
+
+                <a href="">View on Github</a>
+
+                <a href="work/patatap/patatap.html" target = "_blank">Visit Site</a>
+
+            </div>
+
+        </div>
+
+        <div class="card" id="card3">
+
+            <div class="cardImage"></div>
+
+            <div class="cardContent">
+
+                <h3>Pokemon Game</h3>
+
+                <p>Created a personalized version of the Nintendo Pokemon Game with <span class="accent">Java</span> using <span class="accent">GUIs</span>, <span class="accent">OOP</span>, <span class="accent">loops</span>, and
+                    <span class="accent">control flow statements</span>. Also incorporated <span class="accent">File I/O</span> and <span class="accent">quick sort algorithm</span> for leaderboard
+                    functionality.</p>
+
+
+            </div>
+
+            <div class="cardButtons">
+
+                <a href="">View on Github</a>
+
+                <!-- <a href="https://waterloobusinessreview.com">Visit Site</a> -->
+
+            </div>
+
+        </div>
+
+        <!-- <a href="#contactTrigger" id = "contactTrig"><div class="exploreContact">
+
+            <p id="downHeading">Want to talk?</p>
+            <i class="fas fa-chevron-down" id="down"></i>
+
+        </div></a> -->
+
+    </section>
+
+    <section class="contact" id="contactTrigger">
+
+        <h1>Contact</h1>
+        <h3>Feel Free to say <span class="accent">Hello!</span></h3>
+
+        <div class="contactLayout">
+
+            <form action="sendEmail.php" name="emailForm" method="POST">
+
+                <!-- <label for="name">Name:</label> -->
+                <input type="text" name="name" placeholder="Your Name" required id="inputName">
+                <!-- <input type="text" name = "lName" placeholder= "Ex. McCarthy"> -->
+                <!-- <label for="email">Email:</label> -->
+                <input type="email" name="email" placeholder="Your Email" required id="inputEmail">
+                <!-- <label for="message">Message:</label> -->
+                <textarea name="message" cols="30" rows="10" required id="inputMsg"
+                    placeholder="Your Message"></textarea>
+                <input type="submit" id="inputBtn" name="submit">
+
+            </form>
+
+            <div class="contactInfo">
+
+                <ul class="info">
+                    <li><span class="icon"><i class="fas fa-map-pin"></i></span><span class="content">Toronto, ON</span>
+                    </li>
+                    <li><span class="icon"><i class="fas fa-phone-alt"></i></span><span class="content">(647)
+                            612-9212</span></li>
+                    <li><span class="icon"><i class="fas fa-envelope"></i></span><span
+                            class="content">a448pate@uwaterloo.ca</span></li>
+                </ul>
+
+                <hr>
+
+                <ul class="socialLinks">
+                    <a href="https://www.facebook.com/aviipatelll" target="_blank" target="_blank" id="fbLink"><i
+                            class="fab fa-facebook-square"></i></a>
+                    <a href="https://www.linkedin.com/in/aviipatell/" target="_blank" target="_blank" id="linkedLink"><i
+                            class="fab fa-linkedin"></i></a>
+                    <a href="https://github.com/Aviipatell" target="_blank" target="_blank" id="gitLink"><i
+                            class="fab fa-github-square"></i></a>
+                    <a href="mailto:avi.patel0025@gmail.com" target="_blank" target="_blank" id="mailLink"><i
+                            class="fas fa-envelope-square"></i></a>
+                    <a href="https://twitter.com/aviipatell" target="_blank" target="_blank" id="tweetLink"><i
+                            class="fab fa-twitter-square"></i></a>
+                </ul>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <footer>
+
+        <p>Designed and Developed by Avi Patel</p>
+        <p>Avi <span class="accent">&copy</span> 2020</p>
+
+    </footer>
+
+
+
+
+
+</div>
+
+<body>
+
+</body>
+
+</html>
