@@ -61,7 +61,6 @@ $(document).ready(function () {
             github.animate({ opacity: '0', left: '50px' }, 0);
             email.animate({ opacity: '0', left: '50px' }, 0);
             twitter.animate({ opacity: '0', left: '50px' }, 0);
-
         }
 
         if ($(window).scrollTop() > ($(".heroSection").innerHeight() / 2)) {
@@ -77,7 +76,6 @@ $(document).ready(function () {
         if ($(window).scrollTop() > ($("nav").innerHeight())){
             $("#pageUpBtn").animate({opacity: "1"}, 500);
         }
-
 
     });
 
@@ -109,27 +107,29 @@ $(document).ready(function () {
             about.delay(600).animate({ opacity: '1', left: '0' }, 400);
             contact.delay(900).animate({ opacity: '1', left: '0' }, 400);
 
-            facebook.delay(1200).animate({ opacity: '1', left: '0' }, 200);
-            linkedln.delay(1350).animate({ opacity: '1', left: '0' }, 200);
-            github.delay(1500).animate({ opacity: '1', left: '0' }, 200);
-            email.delay(1650).animate({ opacity: '1', left: '0' }, 200);
+            facebook.delay(1200).animate({opacity: '1', left: '0' }, 200);
+            linkedln.delay(1350).animate({opacity: '1', left: '0' }, 200);
+            github.delay(1500).animate({opacity: '1', left: '0' }, 200);
+            email.delay(1650).animate({opacity: '1', left: '0' }, 200);
             twitter.delay(1800).animate({ opacity: '1', left: '0' }, 200).promise().done(function () {
-                $(".bars").css("pointer-events", "auto")
+                $(".bars").css("pointer-events", "auto");
             });
 
 
         }
         else {
 
-            about.animate({ opacity: '0', left: '200px' }, 400);
-            work.animate({ opacity: '0', left: '200px' }, 400);
-            contact.animate({ opacity: '0', left: '200px' }, 400);
+            // LEFT OFF WORK HERE!!
 
-            facebook.animate({ opacity: '0', left: '50px' }, 400);
-            linkedln.animate({ opacity: '0', left: '50px' }, 400);
-            github.animate({ opacity: '0', left: '50px' }, 400);
-            email.animate({ opacity: '0', left: '50px' }, 400);
-            twitter.animate({ opacity: '0', left: '50px' }, 400);
+            about.animate({ opacity: '0', left: '200px' }, 00);
+            work.animate({ opacity: '0', left: '200px' }, 00);
+            contact.animate({ opacity: '0', left: '200px' }, 00);
+
+            facebook.animate({ opacity: '0', left: '50px' }, 00);
+            linkedln.animate({ opacity: '0', left: '50px' }, 00);
+            github.animate({ opacity: '0', left: '50px' }, 00);
+            email.animate({ opacity: '0', left: '50px' }, 00);
+            twitter.animate({ opacity: '0', left: '50px' }, 00);
 
         }
 
@@ -160,6 +160,17 @@ function checkHeight() {
     console.log("Height: " + $(window).innerHeight());
 
     var height = $(window).innerHeight();
+
+    if (height < 550){
+        $(".heroPara").css({
+            top: "25px"
+        });
+    }
+    else {
+        $(".heroPara").css({
+            top: "100px"
+        });
+    }
 
     if (height < 600) {
         $(".expandNav-closed .profilePic").css({

@@ -319,7 +319,7 @@ nav{
     position: relative;
     /* border: 1px solid red; */
     /* min-height: 20px; */
-    width: 300px;
+    /* width: 300px; */
     height: 50%;
     display: none;   
 }
