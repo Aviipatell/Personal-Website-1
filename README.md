@@ -1,6 +1,6 @@
 # Personal Website
 
-Created a portfolio website to showcase some of my work and display some of my contact information for employment and freelance opportunities. View live: [Personal Website 1] (https://aviipatell.github.io/Personal-Website-1/)
+Created a portfolio website to showcase some of my work and display some of my contact information for employment and freelance opportunities. View live: [Personal Website 1](https://aviipatell.github.io/Personal-Website-1/)
 
 ## Getting Started:
 
